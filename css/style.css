@@ -1,21 +1,54 @@
 /* REGOLE GENERALI */
 body{
-    font-size: 15px;
+    font-size: calc(10px + .5vw);
 }
 
 /* tutto il testo centrato */
-[class*="col-"],
-.section-title{
-  text-align: center;
+[class*="col-"]{
+      text-align: center;
+      padding-top: calc(10px + 1.5vw);
 }
 
+/* separo le sezioni */
+section{
+    margin: calc(30px + 1.5vw) auto calc(50px + 1.5vw) auto;
+}
+
+/* gestisco titoli e testo */
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin:  calc(5px + 1vw) 0;
+    text-align: center;
+}
+
+p{
+    max-width: 80%;
+    margin:auto;
+}
+
+/* dimensiono le immagini */
 img{
-    height: 200px;
+    height: calc(100px + 4vw);
 }
 
+
+
+/* SEZIONE "HOW-IT-WORKS" */
+#how-it-works{
+    background-color: #f9f9f9;
+}
 
 
 /* SEZIONE "WHY" */
+#why{
+    background-color: #f9f9f9;
+}
+
 #why img{
     background-color: #428bca;
     border-radius: 50%;
